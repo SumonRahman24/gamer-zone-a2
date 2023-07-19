@@ -142,6 +142,7 @@ nav a {
 
 .banner-img img {
   height: 500px;
+  padding-top: 10px;
 }
 
 .banner-first-title {
@@ -195,6 +196,10 @@ nav a {
      [ Video Game Section ] 
    ============================*/
 
+.video-game {
+  margin-top: 80px;
+}
+
 .video-game h2,
 .video-game > .video-game-desc {
   text-align: center;
@@ -228,7 +233,6 @@ nav a {
   top: 120px;
   left: 80px;
   display: none;
-  background: transparent;
 }
 
 .play-container img {
@@ -255,6 +259,7 @@ nav a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 700;
 }
 
 /* =============================
@@ -480,6 +485,7 @@ footer > ul a {
   /* instantly play game */
   .play-instantly {
     flex-direction: column-reverse;
+    margin-bottom: -15px;
   }
   .play-instantly-content {
     text-align: center;
@@ -520,15 +526,14 @@ footer > ul a {
     padding: 20px;
   }
   .game-item {
-    flex-direction: column;
+    /* flex-direction: column; */
 
-    /* gap: 20px; */
-    margin-top: 30px;
+    gap: 20px;
+    /* margin-top: 30px; */
     border-radius: 50px;
     background: #fff;
     padding: 0;
     min-width: 0px;
-    /* height: 55px; */
   }
   .game-title {
     color: #0b0223;
@@ -577,5 +582,27 @@ footer > ul a {
     width: 100%;
     height: 300px;
     right: 0px;
+  }
+  .play-container {
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+  }
+  .game-category-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .game-item {
+    gap: 20px;
+    /* margin-top: 30px; */
+    border-radius: 50px;
+    background: #fff;
+    padding: 0;
+    min-width: 0px;
+  }
+  .game-title {
+    color: #0b0223;
+    font-size: 10px;
   }
 }
